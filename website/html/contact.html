@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="..\css\contact.css" />
+  </head>
+
+  <body>
+    <div class="flexbox-container">
+      <div class="flexbox-item flexbox-item-1">
+        <a href="Home.html" class="website-name">Arab Forum</a>
+      </div>
+      <div class="flexbox-item flexbox-item-2">
+        <nav>
+          <a href="Home.html" class="cheek">Home</a>
+          <a href="contact.html" class="current-page">Contact</a>
+          <a href="blog.html" class="cheek">Blog</a>
+          <a href="about.html" class="cheek">About us</a>
+        </nav>
+      </div>
+      <div class="flexbox-item flexbox-item-3">
+        <a href="longin.html" class="login-button">Log In / Sign Up</a>
+      </div>
+      <div class="flexbox-item flexbox-item-4">
+        <div class="hamburger-menu">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <!-- The invisible box-shaped link -->
+          <div class="invisible-box">
+            <a href="" class="invisible-link"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Divider"></div>
+    <div class="flexbox-container2">
+      <div class="flexbox-item2 flexbox-item2-1">
+        <h1>Contact us</h1>
+        <h2>Please fill out the form below to send us an email.</h2>
+
+        <h2>Email us:</h2>
+        <p>
+          <a href="mailto:yourname@example.com" class="email"
+            >yourname@example.com</a
+          >
+        </p>
+      </div>
+      <div class="flexbox-item2 flexbox-item2-2">
+        <form onsubmit="myFunction(),check()">
+          <input type="text" name="Name" id="name" placeholder="NAME" />
+          <input type="email" name="Email" id="email" placeholder="EMAIL" />
+          <input type="email" name="Email" id="email1" placeholder="check email" />
+          <input
+            type="text"
+            name="Subject"
+            id="subject"
+            placeholder="SUBJECT"
+          />
+          <textarea
+            name="Message"
+            id="message"
+            placeholder="MESSAGE"
+          ></textarea>
+          <input type="submit" name="submit" id="submit" value="SUBMIT" />
+        </form>
+      </div>
+    </div>
+    <footer class="Footer_n">
+      <div class="Footer_contact">
+        <h4>Contact us</h4>
+        <p class="Footer_Email">202211008@students.asu.jo</p>
+        <p class="Footer_Email">example@arabic.NQ</p>
+        <p class="Footer_Email">example@arabic.NQ</p>
+      </div>
+      <div class="Footer_contact">
+        <h4>Help</h4>
+        <p class="Footer_Email1">example@arabic.NQ</p>
+        <p class="Footer_Email1">example@arabic.NQ</p>
+        <p class="Footer_Email1">example@arabic.NQ</p>
+      </div>
+      <div class="Footer_contact">
+        <h4>Arab Forum</h4>
+        <p class="Footer_Email2">Contact us</p>
+        <p class="Footer_Email2">About US</p>
+      </div>
+    </footer>
+
+    <script>
+      var email1 = document.getElementById("email").value;
+      var email2 = document.getElementById("email1").value;
+
+      function check() {
+        email1 = document.getElementById("email").value;
+        email2 = document.getElementById("email1").value;
+        if (email1 == email2) {
+          alert("correct");
+        } else {
+          alert("try again");
+        }
+      }
+      function myFunction() {
+        var nameValue = document.getElementById("name").value;
+        var emailValue = document.getElementById("email").value;
+        var subjectValue = document.getElementById("subject").value;
+        var messageValue = document.getElementById("message").value;
+        //   if(document.getElementById("submit").onclick){}
+        //   document.getElementById("demo").innerHTML = "<b>your message: </b>" + x;
+
+        alert(
+          "Name: " +
+            nameValue +
+            "\nEmail: " +
+            emailValue +
+            "\nSubject: " +
+            subjectValue +
+            "\nMessage: " +
+            messageValue
+        );
+      }
+    </script>
+  </body>
+</html>

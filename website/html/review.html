@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review</title>
+    <link rel="stylesheet" href="../css/review.css">
+</head>
+
+<body>
+    <div class="gg">
+        <div class="d1">
+            <a href="profile.html">
+                <div class="image">
+                    <img src="../images/user-login-icon-14.png" alt="Notfound" />  
+                    
+               
+            </a> 
+            <form action="" >
+             <textarea name="" id="textareabox" cols="30" rows="10" placeholder="Enter your comments..."></textarea>
+             <br>
+            <input type="number" placeholder="" max="5" min="0" value="5" id="num" >
+            <input type="submit" onclick="getText(),setText(),save()"></form> <center><p id="textc" style="color: black; "value="Noor"></p></center>
+        </div> </div>   
+
+    </div>
+    <script>
+ 
+
+        function getText(){
+        
+            var text=document.getElementById("textareabox").value;
+            var number=document.getElementById("num").value;
+
+            alert("Your Comments: "+text+"\nYour rating: "+number);
+            if(number>3){
+                console.log("Thank you pro");
+                document.getElementById("textc").innerHTML="THenk you";
+ 
+
+            }else{
+
+                document.getElementById("textc").innerHTML="Please give me your point in the email",1000;
+             }
+        }
+        function setText(){
+             alert("This Text Will be Added");  
+        }
+        function save(){
+
+        }
+        
+        </script>
+</body>
+
+</html>

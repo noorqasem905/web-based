@@ -1,0 +1,57 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Courier New', Courier, monospace;
+
+
+}
+body{
+
+    min-height: 100vh;
+    background: url("C:\css project\website\images\account_circle_FILL0_wght400_GRAD0_opsz24.png" )no-repeat;
+    background-size: cover;
+    background-position: center;
+
+}
+.side-bar{
+
+    background: rgba(red, green, blue, alpha);
+    backdrop-filter:blur(10px) ;
+    width: 290px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+left: 0;
+overflow-y:auto ;
+}
+.side-bar .menu{
+
+
+    width: 100%;
+    margin-top:80px ;
+
+}
+.side-bar  .menu .item{
+position: relative;
+cursor:pointer ;
+
+
+}.side-bar  .menu .item a{
+color: beige;
+background-color: aquamarine;
+font-size: 16px;
+text-decoration: none;
+display: block;
+padding: 5px 30px;
+line-height: 60px;
+
+
+}
+.side-bar  .menu .item a:hover{
+
+    background-color: aquamarine;
+    transition: 0.3 ease;
+
+
+}

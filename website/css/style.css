@@ -1,0 +1,8 @@
+html,
+body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  place-items: center;
+  background: linear-gradient(to right, #579bb1, #e1d7c6);
+}
